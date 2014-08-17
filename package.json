@@ -1,6 +1,6 @@
 {
   "name": "nalog",
-  "description": "Multi dialect ORM for Node.JS",
+  "description": "Not Another Logging Utility",
   "version": "0.0.1",
   "author": {
     "name": "nscape",
