@@ -61,10 +61,10 @@ Or pass options to the constructor
       } 
     });
 
-Then Specify the level when logging
+Then specify the level when logging
 
-    na.log(500, 'this will be logged', {}, 5);
-    na.log(500, 'but this will not be', {}, 4);
+    na.log(500, 'this will be logged', { stuff: 123 }, 5);
+    na.log(500, 'but this will not be', { more: 'stuff' }, 4);
     na.error(500, 'levels work for errors too', 3)
 
 Other options:
