@@ -1,36 +1,36 @@
 ## Overview
 
-Simplog is a simple logging and error handling utility using MongoDB
+NALog is a nae logging and error handling utility using MongoDB
 
 ## Installation
 
-    $ npm install simplog
+    $ npm install nalog
 
 ## Usage
 
-Require Simplog
+Require NALog
 
-    var Simplog = require('simplog');
+    var NALog = require('NALog');
 
-Initialize Simplog using a URI
+Initialize NALog using a URI
 
-    var simpl = new Simplog();
-    simpl.connect(URI, callback);
+    var na = new NALog();
+    na.connect(URI, callback);
 
 Or pass in a Mongoose instance
     
     var mongoose = require('mongoose')
     mongoose.connect('mongodb://localhost/test');
 
-    var simpl = new Simplog(mongoose);
+    var na = new NALog(mongoose);
 
 Log something by specifying a code and a message
 
-    simpl.log(1001, 'wow log');
+    na.log(1001, 'wow log');
 
 Log and return the standard Error object
 
-    var Error = simpl.error;
+    var Error = na.error;
 
     function(err, res) {
       if (err) return new Error(1002, 'so error')
@@ -38,7 +38,7 @@ Log and return the standard Error object
 
 Set logging criteria. If a code is passed, it will be evaluated it to determine whether it will be logged or not.
     
-    simpl.setCritera({
+    na.setCritera({
       gte: 1000,
       lte: 50,
       equal: [60, 65]
@@ -46,7 +46,7 @@ Set logging criteria. If a code is passed, it will be evaluated it to determine 
 
 Or pass options to the constructor
 
-    var simpl = new Simplog(mongoose, {
+    var na = new NALog(mongoose, {
       criteria: {
         gte: 1000,
         lte: 50,
