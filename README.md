@@ -1,6 +1,6 @@
 ## Overview
 
-NALog is a nae logging and error handling utility using MongoDB
+nalog is yet another logging and error handling NodeJS utility using MongoDB
 
 ## Installation
 
@@ -8,57 +8,71 @@ NALog is a nae logging and error handling utility using MongoDB
 
 ## Usage
 
-Require NALog
+Require nalog
 
-    var NALog = require('NALog');
+    var nalog = require('nalog');
 
-Initialize NALog using a URI
+Initialize nalog using a URI
 
-    var na = new NALog();
+    var na = new nalog('mongodb://localhost/test');
     na.connect(URI, callback);
 
-Or pass in a Mongoose instance
+Or create and pass in a Mongoose instance
     
     var mongoose = require('mongoose')
     mongoose.connect('mongodb://localhost/test');
 
-    var na = new NALog(mongoose);
+    var na = new nalog(mongoose);
 
 Log something by specifying a code and a message
 
-    na.log(1001, 'wow log');
+    na.log(100, 'wow log'); // 
+
+Log objects
+
+    na.log(100, 'log object', {});
+    na.log('without the code', {})
+    na.log({})
 
 Log and return the standard Error object
 
     var Error = na.error;
 
     function(err, res) {
-      if (err) return new Error(1002, 'so error')
+      if (err) return Error(1002, 'so error');
     };
 
-Set logging criteria. If a code is passed, it will be evaluated it to determine whether it will be logged or not.
+Set logging level criteria. If a level number is passed, it will be evaluated to determine whether to log or not.
     
+    // log everything except when level = 4
     na.setCritera({
-      gte: 1000,
-      lte: 50,
-      equal: [60, 65]
-    })
+      gte: 5,
+      lte: 1,
+      equal: [2, 3, 4]
+    });
 
 Or pass options to the constructor
-
-    var na = new NALog(mongoose, {
+    
+    var na = new nalog(mongoose, {
       criteria: {
-        gte: 1000,
-        lte: 50,
-        equal: [60, 65]
-      }
-    })
+        gte: 5,
+        lte: 1,
+        equal: [2, 3]
+      } 
+    });
+
+Then Specify the level when logging
+
+    na.log(500, 'this will be logged', {}, 5);
+    na.log(500, 'but this will not be', {}, 4);
+    na.error(500, 'levels work for errors too', 3)
 
 Other options:
   
     {
-      console: false, // prints logs to the console
-      colName: 'logs' // name of the collection logs are stored in
+      verbose: false // for debugging purposes, will print database level responses and errors
+      console: true, // prints logs to the console, default: false
+      colName: 'logs' // name of the logging collection
     }
 
 Viewing logs
