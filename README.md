@@ -36,7 +36,7 @@ Log and return the standard Error object
       if (err) return new Error(1002, 'so error')
     };
 
-Set logging criteria. If a code is passed, it will evaluate it to determine whether it will be log it or not.
+Set logging criteria. If a code is passed, it will be evaluated it to determine whether it will be logged or not.
     
     simpl.setCritera({
       gte: 1000,
