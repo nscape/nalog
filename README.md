@@ -46,7 +46,7 @@ Set logging criteria. If a code is passed, it will be evaluated it to determine 
 
 Or pass options to the constructor
 
-    var simpl = new Simplog('mongodb://localhost/test', {
+    var simpl = new Simplog(mongoose, {
       criteria: {
         gte: 1000,
         lte: 50,
