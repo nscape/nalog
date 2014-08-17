@@ -70,7 +70,7 @@ Then specify the level when logging
 Other options:
   
     {
-      verbose: false // for debugging purposes, will print database level responses and errors
+      verbose: false ,// for debugging purposes, will print database messages
       console: true, // prints logs to the console, default: false
       colName: 'logs' // name of the logging collection
     }
