@@ -1,1 +1,1 @@
-module.exports = require('./lib/simplog')
+module.exports = require('./lib/nalog')

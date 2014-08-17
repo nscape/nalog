@@ -1,5 +1,5 @@
 {
-  "name": "simplog",
+  "name": "nalog",
   "description": "Multi dialect ORM for Node.JS",
   "version": "0.0.1",
   "author": {
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sequelize/sequelize.git"
+    "url": "https://github.com/nscape/nalog.git"
   },
   "dependencies": {
     "lodash": "~2.4.0",

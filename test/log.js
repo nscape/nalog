@@ -1,4 +1,4 @@
-var Simplog = require('./../lib/simplog')
+var NALog = require('./../lib/nalog')
 	, chai      = require('chai')
   , expect    = chai.expect
   , should = chai.should()
@@ -8,7 +8,7 @@ var Simplog = require('./../lib/simplog')
 	
 	var simpl;
 
-describe('simplog', function () {
+describe('NALog', function () {
 
   describe('constructor with mongoose', function () {
   	before(function(done){
@@ -17,7 +17,7 @@ describe('simplog', function () {
 			mongoose.connection.once('open', function callback () {
 			  done()
 			});
-			simpl = new Simplog(mongoose)
+			simpl = new NALog(mongoose)
 
 		})
     it('should instantiate without errors', function (done) {

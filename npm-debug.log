@@ -1,21 +1,164 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/home/yuri/local/bin/npm', 'version', 'patch' ]
+1 verbose cli [ 'node', '/home/yuri/local/bin/npm', 'publish' ]
 2 info using npm@1.4.4
 3 info using node@v0.10.26
-4 error Error: Git working directory not clean.
-4 error M README.md
-4 error M lib/simplog.js
-4 error     at /home/yuri/local/lib/node_modules/npm/lib/version.js:98:35
-4 error     at ChildProcess.exithandler (child_process.js:635:7)
-4 error     at ChildProcess.EventEmitter.emit (events.js:98:17)
-4 error     at maybeClose (child_process.js:743:16)
-4 error     at Process.ChildProcess._handle.onexit (child_process.js:810:5)
-5 error If you need help, you may report this *entire* log,
-5 error including the npm and node versions, at:
-5 error     <http://github.com/npm/npm/issues>
-6 error System Linux 3.13.0-32-generic
-7 error command "node" "/home/yuri/local/bin/npm" "version" "patch"
-8 error cwd /home/yuri/code/simplog
-9 error node -v v0.10.26
-10 error npm -v 1.4.4
-11 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/yuri/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+12 verbose folder .
+13 info prepublish simplog@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/yuri/.npm/1f1177db-tar.lock
+16 silly lockFile 2b0176ef-1971-0-36042645992711186-tmp-tgz tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+17 verbose lock tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz /home/yuri/.npm/2b0176ef-1971-0-36042645992711186-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 2b0176ef-1971-0-36042645992711186-tmp-tgz tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+21 silly lockFile 2b0176ef-1971-0-36042645992711186-tmp-tgz tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+22 verbose tar unpack /home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+23 silly lockFile 3c244325-1971-0-36042645992711186-package tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package
+24 verbose lock tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package /home/yuri/.npm/3c244325-1971-0-36042645992711186-package.lock
+25 silly lockFile 2b0176ef-1971-0-36042645992711186-tmp-tgz tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+26 verbose lock tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz /home/yuri/.npm/2b0176ef-1971-0-36042645992711186-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+34 silly gunzTarPerm extractEntry index.js
+35 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+36 silly gunzTarPerm extractEntry .jshintrc
+37 silly gunzTarPerm modified mode [ '.jshintrc', 438, 420 ]
+38 silly gunzTarPerm extractEntry lib/simplog.js
+39 silly gunzTarPerm modified mode [ 'lib/simplog.js', 438, 420 ]
+40 silly gunzTarPerm extractEntry makefile
+41 silly gunzTarPerm modified mode [ 'makefile', 438, 420 ]
+42 silly gunzTarPerm extractEntry test/config.js
+43 silly gunzTarPerm modified mode [ 'test/config.js', 438, 420 ]
+44 silly gunzTarPerm extractEntry test/log.js
+45 silly gunzTarPerm modified mode [ 'test/log.js', 438, 420 ]
+46 silly lockFile 3c244325-1971-0-36042645992711186-package tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package
+47 silly lockFile 3c244325-1971-0-36042645992711186-package tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package
+48 silly lockFile 2b0176ef-1971-0-36042645992711186-tmp-tgz tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+49 silly lockFile 2b0176ef-1971-0-36042645992711186-tmp-tgz tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/tmp.tgz
+50 verbose tar pack [ '/home/yuri/.npm/simplog/0.0.1/package.tgz',
+50 verbose tar pack   '/home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package' ]
+51 verbose tarball /home/yuri/.npm/simplog/0.0.1/package.tgz
+52 verbose folder /home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package
+53 silly lockFile 3c244325-1971-0-36042645992711186-package tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package
+54 verbose lock tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package /home/yuri/.npm/3c244325-1971-0-36042645992711186-package.lock
+55 silly lockFile 52715cd5-ri-npm-simplog-0-0-1-package-tgz tar:///home/yuri/.npm/simplog/0.0.1/package.tgz
+56 verbose lock tar:///home/yuri/.npm/simplog/0.0.1/package.tgz /home/yuri/.npm/52715cd5-ri-npm-simplog-0-0-1-package-tgz.lock
+57 silly lockFile 3c244325-1971-0-36042645992711186-package tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package
+58 silly lockFile 3c244325-1971-0-36042645992711186-package tar:///home/yuri/tmp/npm-21022-R2KD0wG5/1408250821971-0.36042645992711186/package
+59 silly lockFile 52715cd5-ri-npm-simplog-0-0-1-package-tgz tar:///home/yuri/.npm/simplog/0.0.1/package.tgz
+60 silly lockFile 52715cd5-ri-npm-simplog-0-0-1-package-tgz tar:///home/yuri/.npm/simplog/0.0.1/package.tgz
+61 silly lockFile 815f0f06-e-yuri-npm-simplog-0-0-1-package /home/yuri/.npm/simplog/0.0.1/package
+62 verbose lock /home/yuri/.npm/simplog/0.0.1/package /home/yuri/.npm/815f0f06-e-yuri-npm-simplog-0-0-1-package.lock
+63 silly lockFile 815f0f06-e-yuri-npm-simplog-0-0-1-package /home/yuri/.npm/simplog/0.0.1/package
+64 silly lockFile 815f0f06-e-yuri-npm-simplog-0-0-1-package /home/yuri/.npm/simplog/0.0.1/package
+65 verbose tar unpack /home/yuri/.npm/simplog/0.0.1/package.tgz
+66 silly lockFile 40939ace-e-yuri-npm-simplog-0-0-1-package tar:///home/yuri/.npm/simplog/0.0.1/package
+67 verbose lock tar:///home/yuri/.npm/simplog/0.0.1/package /home/yuri/.npm/40939ace-e-yuri-npm-simplog-0-0-1-package.lock
+68 silly lockFile 52715cd5-ri-npm-simplog-0-0-1-package-tgz tar:///home/yuri/.npm/simplog/0.0.1/package.tgz
+69 verbose lock tar:///home/yuri/.npm/simplog/0.0.1/package.tgz /home/yuri/.npm/52715cd5-ri-npm-simplog-0-0-1-package-tgz.lock
+70 silly gunzTarPerm modes [ '755', '644' ]
+71 silly gunzTarPerm extractEntry package.json
+72 silly gunzTarPerm extractEntry .npmignore
+73 silly gunzTarPerm extractEntry README.md
+74 silly gunzTarPerm extractEntry index.js
+75 silly gunzTarPerm extractEntry .jshintrc
+76 silly gunzTarPerm extractEntry lib/simplog.js
+77 silly gunzTarPerm extractEntry makefile
+78 silly gunzTarPerm extractEntry test/config.js
+79 silly gunzTarPerm extractEntry test/log.js
+80 silly lockFile 40939ace-e-yuri-npm-simplog-0-0-1-package tar:///home/yuri/.npm/simplog/0.0.1/package
+81 silly lockFile 40939ace-e-yuri-npm-simplog-0-0-1-package tar:///home/yuri/.npm/simplog/0.0.1/package
+82 silly lockFile 52715cd5-ri-npm-simplog-0-0-1-package-tgz tar:///home/yuri/.npm/simplog/0.0.1/package.tgz
+83 silly lockFile 52715cd5-ri-npm-simplog-0-0-1-package-tgz tar:///home/yuri/.npm/simplog/0.0.1/package.tgz
+84 verbose chmod /home/yuri/.npm/simplog/0.0.1/package.tgz 644
+85 verbose chown /home/yuri/.npm/simplog/0.0.1/package.tgz [ 1000, 1000 ]
+86 silly lockFile 3a52ce78- .
+87 silly lockFile 3a52ce78- .
+88 silly publish { name: 'simplog',
+88 silly publish   description: 'Multi dialect ORM for Node.JS',
+88 silly publish   version: '0.0.1',
+88 silly publish   author: { name: 'nscape', email: 'nscapex@gmail.com' },
+88 silly publish   contributors: [ { name: 'nscape', email: 'nscapex@gmail.com' } ],
+88 silly publish   repository:
+88 silly publish    { type: 'git',
+88 silly publish      url: 'https://github.com/sequelize/sequelize.git' },
+88 silly publish   dependencies: { lodash: '~2.4.0', mongoose: '~3.8.0', mongodb: '~1.4.8' },
+88 silly publish   devDependencies: { chai: '~1.9.0', mocha: '~1.17.0', jshint: '>=2.4.2' },
+88 silly publish   keywords: [ 'log', 'logging', 'logger' ],
+88 silly publish   main: 'index',
+88 silly publish   engines: { node: '>=0.6.21' },
+88 silly publish   license: 'MIT',
+88 silly publish   readme: '## Overview\n\nSimplog is a simple logging and error handling utility using MongoDB\n\n## Installation\n\n    $ npm install simplog\n\n## Usage\n\nRequire Simplog\n\n    var Simplog = require(\'simplog\');\n\nInitialize Simplog using a URI\n\n    var simpl = new Simplog();\n    simpl.connect(URI, callback);\n\nOr pass in a Mongoose instance\n    \n    var mongoose = require(\'mongoose\')\n    mongoose.connect(\'mongodb://localhost/test\');\n\n    var simpl = new Simplog(mongoose);\n\nLog something by specifying a code and a message\n\n    simpl.log(1001, \'wow log\');\n\nLog and return the standard Error object\n\n    var Error = simpl.error;\n\n    function(err, res) {\n      if (err) return new Error(1002, \'so error\')\n    };\n\nSet logging criteria. If a code is passed, it will be evaluated it to determine whether it will be logged or not.\n    \n    simpl.setCritera({\n      gte: 1000,\n      lte: 50,\n      equal: [60, 65]\n    })\n\nOr pass options to the constructor\n\n    var simpl = new Simplog(mongoose, {\n      criteria: {\n        gte: 1000,\n        lte: 50,\n        equal: [60, 65]\n      }\n    })\n\nOther options:\n  \n    {\n      console: false, // prints logs to the console\n      colName: \'logs\' // name of the collections logs are stored in\n    }\n\nViewing logs\n\n    Coming soon...\n\n\n## License\n\nCopyright (c) 2014 nscape\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+88 silly publish   readmeFilename: 'README.md',
+88 silly publish   bugs: { url: 'https://github.com/sequelize/sequelize/issues' },
+88 silly publish   homepage: 'https://github.com/sequelize/sequelize',
+88 silly publish   _id: 'simplog@0.0.1',
+88 silly publish   dist: { shasum: 'b34b1ca7b2ec7157240d9ee2e1cb002e7bb185f6' },
+88 silly publish   _from: '.' }
+89 verbose url raw simplog
+90 verbose url resolving [ 'https://registry.npmjs.org/', './simplog' ]
+91 verbose url resolved https://registry.npmjs.org/simplog
+92 info trying registry request attempt 1 at 00:47:02
+93 http PUT https://registry.npmjs.org/simplog
+94 http 403 https://registry.npmjs.org/simplog
+95 error publish Failed PUT 403
+96 error Error: forbidden user: nscape not authorized to modify simplog
+96 error Changed: description "A very simple logging module.  Because all the others are too much.\u000a This module relies on the node util module to provide timestamping and formatting of log messages.\u000a Messages are written to stdout via util.log." -> "Multi dialect ORM for Node.JS"
+96 error Changed: dist-tags.latest "0.1.0" -> "0.0.1"
+96 error Added: versions.0.0.1
+96 error Changed: readme "# simplog\u000a\u000aThe simplest useful log module imaginable. \u000a\u000aWrites messages to stdout (as in [12 Factor\u000aApp] (http://www.12factor.net/logs)) using the node.js util.log and util.format\u000amethods.\u000a\u000a\u000a#### Installation\u000a    npm install simplog\u000a\u000a#### Usage\u000aSupports error, info, warn, debug and a handy event method.  It's\u000awritten in coffee script and you should be too (that was deliberate).\u000a\u000a    log.error \"this is an error\"\u000a    log.info  \"this is informational\"\u000a    log.warn  \"this is a warning\"\u000a    log.debug \"this is a debug message and will only show up if process.env.DEBUG or window.debug is truthy\"\u000a    log.event \"this will log with the type [EVENT] and will only show up if process.env.DEBUG is truthy\"\u000a\u000a#### Formatting\u000aIt's even possible to use string formatting with it, like:\u000a\u000a    log.info \"that %s looked like %j\", object_name, object\u000a\u000aUnder the covers it's just using node's util.format and supports what\u000ayou would expect.\u000a\u000a#### Output\u000aAs of 0.0.5 the output includes a pid as follows\u000a\u000a    22 May 22:07:44 - [15794] [ERROR] look ma, an error\u000a\u000aIf you decide you like the old way, sans pid:\u000a\u000a    22 May 22:07:44 - [ERROR] look ma, an error\u000a\u000ayou can make `process.env.NOLOGPID` truthy and it will go away.  If there's something called window in the global scope, we'll skip the PID in any output.  Reasonable?\u000a" -> "## Overview\u000a\u000aSimplog is a simple logging and error handling utility using MongoDB\u000a\u000a## Installation\u000a\u000a    $ npm install simplog\u000a\u000a## Usage\u000a\u000aRequire Simplog\u000a\u000a    var Simplog = require('simplog');\u000a\u000aInitialize Simplog using a URI\u000a\u000a    var simpl = new Simplog();\u000a    simpl.connect(URI, callback);\u000a\u000aOr pass in a Mongoose instance\u000a    \u000a    var mongoose = require('mongoose')\u000a    mongoose.connect('mongodb://localhost/test');\u000a\u000a    var simpl = new Simplog(mongoose);\u000a\u000aLog something by specifying a code and a message\u000a\u000a    simpl.log(1001, 'wow log');\u000a\u000aLog and return the standard Error object\u000a\u000a    var Error = simpl.error;\u000a\u000a    function(err, res) {\u000a      if (err) return new Error(1002, 'so error')\u000a    };\u000a\u000aSet logging criteria. If a code is passed, it will be evaluated it to determine whether it will be logged or not.\u000a    \u000a    simpl.setCritera({\u000a      gte: 1000,\u000a      lte: 50,\u000a      equal: [60, 65]\u000a    })\u000a\u000aOr pass options to the constructor\u000a\u000a    var simpl = new Simplog(mongoose, {\u000a      criteria: {\u000a        gte: 1000,\u000a        lte: 50,\u000a        equal: [60, 65]\u000a      }\u000a    })\u000a\u000aOther options:\u000a  \u000a    {\u000a      console: false, // prints logs to the console\u000a      colName: 'logs' // name of the collections logs are stored in\u000a    }\u000a\u000aViewing logs\u000a\u000a    Coming soon...\u000a\u000a\u000a## License\u000a\u000aCopyright (c) 2014 nscape\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining\u000aa copy of this software and associated documentation files (the\u000a'Software'), to deal in the Software without restriction, including\u000awithout limitation the rights to use, copy, modify, merge, publish,\u000adistribute, sublicense, and/or sell copies of the Software, and to\u000apermit persons to whom the Software is furnished to do so, subject to\u000athe following conditions:\u000a\u000aThe above copyright notice and this permission notice shall be\u000aincluded in all copies or substantial portions of the Software.\u000a\u000aTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\u000aEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\u000aMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\u000aIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\u000aCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\u000aTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\u000aSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\u000a"
+96 error Changed: time.modified "2014-07-08T18:09:54.596Z" -> "2014-08-17T04:45:42.311Z"
+96 error Added: time.0.0.1
+96 error Changed: author.name "Ian Groff" -> "nscape"
+96 error Added: author.email
+96 error Changed: repository.url "https://github.com/intimonkey/node-simplog.git" -> "https://github.com/sequelize/sequelize.git"
+96 error Changed: keywords.1 "node" -> "logging"
+96 error Added: keywords.2
+96 error Changed: license "BSD" -> "MIT"
+96 error Changed: homepage "https://github.com/intimonkey/node-simplog" -> "https://github.com/sequelize/sequelize"
+96 error Changed: bugs.url "https://github.com/intimonkey/node-simplog/issues" -> "https://github.com/sequelize/sequelize/issues"
+96 error Added: contributors
+96 error Added: _attachments: simplog
+96 error     at RegClient.<anonymous> (/home/yuri/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+96 error     at Request.self.callback (/home/yuri/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+96 error     at Request.EventEmitter.emit (events.js:98:17)
+96 error     at Request.<anonymous> (/home/yuri/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+96 error     at Request.EventEmitter.emit (events.js:117:20)
+96 error     at IncomingMessage.<anonymous> (/home/yuri/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+96 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+96 error     at _stream_readable.js:920:16
+96 error     at process._tickCallback (node.js:415:13)
+97 error If you need help, you may report this *entire* log,
+97 error including the npm and node versions, at:
+97 error     <http://github.com/npm/npm/issues>
+98 error System Linux 3.13.0-32-generic
+99 error command "node" "/home/yuri/local/bin/npm" "publish"
+100 error cwd /home/yuri/code/simplog
+101 error node -v v0.10.26
+102 error npm -v 1.4.4
+103 verbose exit [ 1, true ]
