@@ -58,7 +58,7 @@ Other options:
   
     {
       console: false, // prints logs to the console
-      colName: 'logs' // name of the collections logs are stored in
+      colName: 'logs' // name of the collection logs are stored in
     }
 
 Viewing logs
