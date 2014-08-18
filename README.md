@@ -48,7 +48,7 @@ Set logging level criteria. If a level number is passed, it will be evaluated to
     na.setCritera({
       gte: 5,
       lte: 1,
-      equal: [2, 3, 4]
+      equal: [2, 3]
     });
 
 Or pass options to the constructor
