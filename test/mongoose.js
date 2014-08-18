@@ -1,25 +1,25 @@
 var NALog = require('./../lib/nalog')
-	, chai      = require('chai')
+  , chai      = require('chai')
   , expect    = chai.expect
   , should = chai.should()
   , mongoose = require('mongoose')
   , config = require('./config')
 
-	
+  
 var simpl;
 
 describe('NALog with mongoose', function () {
 
   describe('constructor', function () {
-  	before(function(done){
-  		mongoose.connect(config.URI);
-  		mongoose.connection.on('error', function() { throw new Error('Unable to connect') });
-			mongoose.connection.once('open', function callback () {
-			  done()
-			});
-			simpl = new NALog(mongoose, {verbose:false})
+    before(function(done){
+      mongoose.connect(config.URI);
+      mongoose.connection.on('error', function() { throw new Error('Unable to connect') });
+      mongoose.connection.once('open', function callback () {
+        done()
+      });
+      simpl = new NALog(mongoose, {verbose:false})
 
-		})
+    })
     it('should instantiate without errors', function (done) {
       simpl.should.be.a('object')
       done();
