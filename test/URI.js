@@ -1,4 +1,4 @@
-var NALog = require('./../lib/nalog')
+var nalog = require('./../lib/nalog')
   , chai      = require('chai')
   , expect    = chai.expect
   , should = chai.should()
@@ -8,12 +8,10 @@ var NALog = require('./../lib/nalog')
 var simpl;
 
 describe('NALog with native mongodb', function () {
-
   describe('constructor with URI', function () {
     before(function(done){
-      simpl = new NALog(config.URI, {verbose: false})
-      simpl.connect(function(err){
-        if (err) throw err
+      simpl = new nalog({verbose: false});
+      simpl.connect(config.URI).then(function(){
         done()
       })
     })
